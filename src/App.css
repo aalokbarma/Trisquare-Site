@@ -1,0 +1,11 @@
+*{
+    background: rgba(50,50,50,0.01);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* .App{
+    background: url("https://cache.desktopnexus.com/thumbseg/921/921927-bigthumbnail.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100vw;
+} */

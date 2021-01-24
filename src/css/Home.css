@@ -1,0 +1,113 @@
+.home{
+  display: flex;
+  margin-top: -122px !important;
+}
+.home__main__header{
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 2rem #000;
+    padding: 150px 100px;
+    padding-bottom: 0px !important;
+    z-index: 9;
+    margin-top: -225px;
+}
+.home__main__link{
+    display: flex;
+    width: auto;
+    height: auto;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 70%;
+    left: 40%;
+    padding: 10px 25px;
+    border: 3px solid black;
+    color: white;
+    background: transparent;
+    text-shadow: 0 0 3rem #000;
+    box-shadow: 0 0 2rem #000;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    z-index: 9;
+    transition: 0.5s;
+}
+#timers{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.home__main__link:hover{
+    color: green;
+    background-color: white;
+    text-shadow: 0 0 3rem green;
+    border: 3px solid green;
+    box-shadow: 0 0 2rem green;
+}
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    overflow-x: hidden;
+  }
+  .image {
+    width: 100vw;
+    height: 88vh;
+    border-radius: 10px;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .slide {
+    opacity: 0;
+    transition-duration: 2s ease;
+  }
+  .slide.active {
+    opacity: 1;
+    transition-duration: 2s;
+    transform: scale(1.08);
+  }
+  @media only screen and (max-width:600px){
+    .home__main__header{
+      font-size: 1.1rem !important;
+      padding: 0px 0px;
+      margin-top: 0px;
+  }
+  .home__main__link{
+    top: 60%;
+    left: 30%;
+    padding: 7px 20px;
+    border: 3px solid white;
+    background: rgba(250,250,250,0.2);
+    text-shadow: 0 0 1rem green ;
+    font-size: 1.3rem;    
+  }
+}

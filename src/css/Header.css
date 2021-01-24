@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(255 , 255 , 255 , 0.4);
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+    height: 17vh;
+    padding-left: 80px;
+    margin-bottom: -161px;
+}
+.header__logo{
+    width: 90px;
+    object-fit: contain;
+    background-color: transparent;
+}
+@media only screen and (max-width: 600px){
+    .header__logo{
+        width: 60px;
+        object-fit: contain;
+    }
+    .header{
+        height: 15vh;
+        padding-left: 20px;
+    }
+}
+

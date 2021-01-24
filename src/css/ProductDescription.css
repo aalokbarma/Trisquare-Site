@@ -1,0 +1,943 @@
+.productDescription__heading{
+    margin:  10px 25px;
+}
+.productDescription__price{
+    font-weight: 400;
+}
+.productDescription__mainPrice{
+    margin: 10px 25px;
+    color: rgb(0, 182, 182);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.productDescription__cutPrice{
+    margin: 10px 25px;
+    color: gray;
+    text-decoration:line-through;
+}
+.productDescription__saving{
+    margin: 10px 25px;
+    font-size: 2rem;
+    color:  #6faa34;
+}
+.productDescription__description{
+    padding: 25px;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    line-height: 1.8rem;
+}
+.productDescription__button{
+    display: flex;
+    width: 100%;
+    font-size: 1rem !important;
+    letter-spacing: 2px !important;
+    transition: all 0.3s !important;
+}
+.retailerWebsite{
+    background:  rgb(180, 180, 180) !important;
+    margin: 10px 0 !important;
+    transition: all 0.3s !important;
+}
+.retailerWebsite:hover{
+    background: rgb(116, 116, 116) !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+.buyNow{
+    background:  #7cbe3a !important;
+    margin: 10px 0 !important;
+    transition: all 0.3s !important;
+}
+.buyNow:hover{
+    background: #4f7926 !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+.productDescription__options{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+.option{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;  
+}
+.optionDiv{
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    color:  rgb(0, 128, 128) !important;
+    font-size: 4rem !important;
+    margin: 5px;
+}
+.productDescription__span{
+    font-size: 1.35rem !important;
+    font-weight: 500;
+    color: rgb(92, 92, 92);
+}
+.productDescription__purchasedUnits,
+.productDescription__durationTime{
+    font-size: 1.3rem !important;
+    padding: 5px 5px;
+    color: white;
+    text-shadow: 0 0 0.5rem #000;
+    letter-spacing: 1.5px;
+}
+.description{
+    text-decoration: none !important;
+}
+#timer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.spans{
+    font-size: 1rem;
+    color: rgb(110, 109, 109);
+    font-weight: 500;
+}
+.labeling{
+    font-size: 0.65rem;
+    padding-right: 6px;
+    padding-left: 2px;
+    color: gray;
+}
+/* ############################# Progrss Bar ######################################## */
+.container1{
+    position: relative !important;
+    margin-top: 75px !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+}
+.container1 .skill{
+    position: relative !important;
+    display: flex !important;
+    margin: 20px 0 !important;
+    padding: 24px 10px 18px !important;
+    overflow: hidden !important;
+    transition: 0.5s !important;
+}
+.container1 .skill .Value{
+    position: relative !important;
+    width: auto !important;
+    text-align: left !important;
+    color:black !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    margin-top: -2px !important;
+    text-transform: uppercase !important;
+}
+.container1 .skill .percent {
+    position: relative !important;
+    width: calc(100% - 150px) !important;
+    height: 20px !important;
+    margin: 0 10px !important;
+    border-radius: 10px !important;
+    box-shadow: inset 0 0 10px #000 !important;
+}
+.container1 .skill .percent .progress{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 50% !important;
+    height: 100% !important;
+    border-radius: 10px !important;
+    background: rgb(43, 252, 1) !important;
+    box-shadow: 0 0 2px  rgb(43, 252, 1),0 0 5px  rgb(43, 252, 1), 0 0 10px  rgb(43, 252, 1) !important;
+    animation: animate 1s ease-in-out forwards !important;
+}
+@keyframes animate{
+    from{
+        width: 0% !important;
+    }
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.container .skill{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .skill .Name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.container .skill .Value{
+    position: relative;
+    width: auto;
+    text-align: left;
+    color: #000;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.container .skill .percent {
+    position: relative;
+    width: calc(100%);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #b8b8b8;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+.container .skill .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    background: rgb(43, 252, 1);
+    box-shadow: 0 0 2px  rgb(43, 252, 1),0 0 5px  rgb(43, 252, 1), 0 0 10px  rgb(43, 252, 1);
+    animation: animate 1s ease-in-out forwards;
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+.container1__price  {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    width: calc(100% - 60px);
+    margin: auto;
+    padding-left: 0px;
+    color: rgb(97, 97, 97);
+    padding-bottom: 10px;
+}
+
+.container1__units{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    color: rgb(78, 78, 78);
+    padding-top: 10px;
+}
+.container1__units > .container1__units__unit{
+    flex-direction: column;
+    text-align: center;
+}
+.modal{
+    border: none !important;
+    border: 0;
+    outline: none !important;
+    outline-style: none !important;
+}
+.orderModal{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    /* padding-top: 75px; */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50vw;
+    height: 405px;
+    overflow-y: scroll;
+    z-index: 10000;
+    box-shadow: 0 10px 1rem #555;
+    border: none !important;
+    outline: none !important;
+    outline-style: none !important;
+    padding-bottom: 15px;
+    opacity: 1 !important;
+    background: #fff;
+}
+.orderModal__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    background: rgb(177, 176, 176);
+    margin-top: -25px;
+}
+.orderModal__heading{
+    text-align: center;
+    flex: 1;
+    color: rgb(100, 99, 99);
+    padding: 10px;
+    padding-left: 35px;
+}
+.orderModal__closeButton{
+    padding: 25px;
+    padding-top: 5px !important;
+    padding-right: 10px !important;
+    outline-style: none;
+    outline: none;
+    border: none;
+    float: right;
+    font-size: 1.5rem;
+    color:#62962E;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.orderModal__closeButton:hover{
+    color: #2e4616;
+    font-weight: bolder;
+}
+.orderModal__title{
+    color: gray;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+.orderModal__row{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.orderModal__label{
+    width: 40% !important;
+    float: left;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: rgb(114, 113, 113);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.orderModal__input{
+    width: 200px;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(114, 113, 113);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    border: 1px solid gray;
+    outline: none;
+    outline-style: none;
+}
+.active{
+    background: rgba(71, 71, 71, 0.281);
+}
+.orderModal__checkout{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    background: #62962E  !important;
+    transition: all 0.3s;
+}
+.orderModal__checkout:hover{
+    background:  #5a8b29;
+    box-shadow: 0 0 2rem #555;
+    color: white;
+    cursor: pointer;
+}
+.MuiButton-root{
+    font-size: 1.2rem;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 15px;
+    background: #62962E ;
+}
+.targetPriceModal__form{
+    display: flex;
+    flex-direction: row;
+
+}
+.targetPriceModal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.targetPriceModal__input{
+    width: 25px;
+}
+.targetPriceModal__label{
+    width: 20%!important;
+}
+.shippingModal{
+    height: 500px;
+    width: 40vw;
+    overflow-y: auto;
+    padding-top: 0rem;
+}
+.shippingModal__header{
+    margin-top: 4.7rem;
+}
+.orderModal__textarea{
+    display: flex;
+    width: 100%;
+    height: 35px !important;
+}
+#continent{
+    display: flex !important;
+    width: 100% !important;
+    /* margin-left: 10% !important; */
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.divRow{
+    display: flex;
+    flex-direction: row;
+}
+.divColumn1,
+.divColumn2{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainLabels{
+    display: flex;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+}
+.orderModal__textarea{
+    /* width: 90% !important;
+    display: flex !important;
+    height: 10vh !important; */
+    height: 10vh;
+    display: flex;
+    width: 81%;
+    padding: 20px 10px;
+    font-size: 1rem;
+    color: rgb(59, 59, 59);
+    letter-spacing: 1px;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    outline: none;
+    outline-style: none;
+}
+.orderModal__inputs::placeholder{
+    font-size: 0.7rem;
+}
+.orderModal__textarea::placeholder{
+    font-size: 1rem;
+}
+.labelDivs1,
+.labelDivs2{
+    display: flex !important;
+    flex: 0.5 !important;
+    text-align: start !important;
+}
+.continentDiv,
+.countryDiv{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    /* padding-right: 10px; */
+}
+.targetPriceModal__form{
+    width: 100% !important;
+    display: flex;
+}
+.target__header{
+    margin-top: 40px !important;
+}
+@media only screen and (max-width: 1024px){
+    .productDescription__options{
+        display: flex;
+        flex-direction: column;
+    }
+    .productDescription__deration{
+        margin-bottom: 1rem;
+    }
+    .orderModal{
+        width: 65%;
+        padding-bottom: 35px;
+    }
+    .orderModal__heading{
+        padding: 15px;
+        font-size: 2.2rem;
+    }
+    .orderModal__title{
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+        text-align: center !important;
+    }
+    .orderModal__row{
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    .orderModal__label{
+        margin-top: 5px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        
+    }
+    .orderModal__input{
+        width: 200px;
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .orderModal__details{
+        width: 100% !important;
+    }
+    .targetPriceModal{
+        width: 90vw !important;
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    /* .orderModal__label{
+        display: flex;
+        flex: 0.2;
+    } */
+    .targetPriceModal__form{
+        display: flex !important;
+        width: 40% !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 325px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .productDescription__options{
+        display: flex;
+        flex-direction: column;
+    }
+    .productDescription__deration{
+        margin-bottom: 1rem;
+    }
+    .orderModal{
+        width: 65% ;
+        padding-bottom: 35px ;
+    }
+    .orderModal__heading{
+        padding: 15px;
+        font-size: 2.2rem;
+    }
+    .orderModal__title{
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+        text-align: center !important;
+    }
+    .orderModal__row{
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    .orderModal__label{
+        margin-top: 5px ;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .orderModal__input{
+        width: 200px;
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .orderModal__details{
+        width: 100% !important;
+    }
+    .targetPriceModal{
+        width: 90vw !important;
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    /* .orderModal__label{
+        display: flex;
+        flex: 0.2;
+    } */
+    .targetPriceModal__form{
+        display: flex !important;
+        width: 50% !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 225px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .productDescription__heading{
+        margin:  0px 15px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: rgb(77, 76, 76);
+    }  
+    .productDescription__mainPrice{
+        margin: 10px 18px;
+        color: rgb(0, 182, 182);
+        font-size: 1.8rem;
+    }
+    .productDescription__cutPrice{
+        margin: 10px 18px;
+        font-size: 1.2rem;
+    }
+    .productDescription__saving{
+        margin: 10px 18px;
+        font-size: 1.4rem;
+    }
+    .productDescription__description{
+        padding: 15px;
+        font-size: 0.85rem;
+        letter-spacing: 0px;
+        line-height: 1.3rem;
+    }
+    .productDescription__button{
+        font-size: 0.95rem !important;
+        letter-spacing: 1px !important;
+        color: white;
+    }
+    .productDescription__options{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .productDescription__deration{
+        margin-bottom: 1rem !important;
+        align-items: center;
+    }
+    .option{
+        margin: 0px 5px;
+    }
+    .icon{
+        color:  rgb(0, 128, 128) !important;
+        font-size: 3rem !important;
+        margin: 5px;
+    }
+    .productDescription__span{
+        padding-top: 0.2rem;
+        font-size: 0.95rem !important;
+    }
+    .productDescription__purchasedUnits,
+    .productDescription__durationTime{
+        font-size: 1.1rem !important;
+        padding: 5px 0px;
+        color: white;
+        letter-spacing: 1px;
+    }
+    /* ############################# Progrss Bar ######################################## */
+    .container1{
+        position: relative !important;
+        margin-top: 75px !important;
+        margin-bottom: 20px !important;
+        width: 100% !important;
+    }
+    .container1 .skill{
+        position: relative !important;
+        display: flex !important;
+        margin: 20px 0 !important;
+        padding: 24px 10px 18px !important;
+        overflow: hidden !important;
+        transition: 0.5s !important;
+    }
+    .container1 .skill .Value{
+        position: relative !important;
+        width: auto !important;
+        text-align: left !important;
+        color:black !important;
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        margin-top: -2px !important;
+        text-transform: uppercase !important;
+    }
+    .container1 .skill .percent {
+        position: relative !important;
+        width: calc(100% - 150px) !important;
+        height: 20px !important;
+        margin: 0 10px !important;
+        border-radius: 10px !important;
+        box-shadow: inset 0 0 10px #000 !important;
+    }
+    .container1 .skill .percent .progress{
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 50% !important;
+        height: 100% !important;
+        border-radius: 10px !important;
+        background: rgb(43, 252, 1) !important;
+        box-shadow: 0 0 2px  rgb(43, 252, 1),0 0 5px  rgb(43, 252, 1), 0 0 10px  rgb(43, 252, 1) !important;
+        animation: animate 1s ease-in-out forwards !important;
+    }
+    @keyframes animate{
+        from{
+            width: 0% !important;
+        }
+    }
+    .container{
+        position: relative;
+        width: 100%;
+    }
+    .container .skill{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 24px 10px 18px;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .container .skill .Name{
+        position: relative;
+        width: 110px;
+        text-align: right;
+        color: #fff;
+        margin-top: -2px;
+        text-transform: uppercase;
+    }
+    .container .skill .Value{
+        position: relative;
+        width: auto;
+        text-align: left;
+        color: #000;
+        margin-top: -2px;
+        text-transform: uppercase;
+    }
+    .container .skill .percent {
+        position: relative;
+        width: calc(100%);
+        height: 20px;
+        margin: 0 10px;
+        border-radius: 10px;
+        background: #b8b8b8;
+        box-shadow: inset 0 0 10px #000;
+        overflow: hidden;
+    }
+    .container .skill .percent .progress{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: inset 0 0 2px #000;
+        background: rgb(43, 252, 1);
+        box-shadow: 0 0 2px  rgb(43, 252, 1),0 0 5px  rgb(43, 252, 1), 0 0 10px  rgb(43, 252, 1);
+        animation: animate 1s ease-in-out forwards;
+    }
+    @keyframes animate{
+        from{
+            width: 0;
+        }
+    }
+    .container1__price  {
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        width: calc(100% - 60px);
+        margin: auto;
+        padding-left: 0px;
+        color: rgb(97, 97, 97);
+        padding-bottom: 10px;
+    }
+    .container1__units{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        color: rgb(78, 78, 78);
+        padding-top: 10px;
+    }
+    .container1__units > .container1__units__unit{
+        flex-direction: column;
+        text-align: center;
+    }
+    .modal{
+        border: none !important;
+        border: 0;
+        outline: none !important;
+        outline-style: none !important;
+        width: 100% !important;
+        overflow: auto;
+    }
+    .orderModal{
+        position: absolute;
+        overflow: scroll !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        height: 70vh;
+        z-index: 10000;
+        box-shadow: 0 10px 1rem #555;
+        border: none !important;
+        outline: none !important;
+        outline-style: none !important;
+        padding-bottom: 25px;
+        opacity: 1 !important;
+        background: #fff;
+    }
+    /* .orderModal__container{
+        max-width: calc(100vw - 2rem);
+        max-height: calc(100vh - 2rem);
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+        overflow: scroll !important;
+        position: relative;
+    } */
+    .orderModal__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        font-size: 0.7rem;
+        background: rgb(177, 176, 176);
+    }
+    .orderModal__heading{
+        text-align: center;
+        flex: 1;
+        color: rgb(100, 99, 99);
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 1.3rem;
+    }
+    .orderModal__title{
+        color: gray;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .orderModal__details{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .orderModal__row{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
+    .orderModal__label{
+        width: 40% !important;
+        float: left;
+        margin-top: 5px;
+        font-size: 0.8rem;
+        color: rgb(114, 113, 113);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+    .orderModal__input{
+        width: 100px;
+        font-size: 0.8rem;
+        padding: 8px;
+        margin: 5px;
+        color: rgb(114, 113, 113);
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        border: 1px solid gray;
+        outline: none;
+        outline-style: none;
+    }
+    .active{
+        background: rgba(71, 71, 71, 0.281);
+    }
+    .orderModal__checkout{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+        background: #62962E  !important;
+        transition: all 0.3s;
+    }
+    .orderModal__checkout:hover{
+        background:  #5a8b29;
+        box-shadow: 0 0 2rem #555;
+        color: white;
+        cursor: pointer;
+    }
+    .MuiButton-root{
+        font-size: 1.2rem;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 15px;
+        background: #62962E ;
+    }
+    .orderModal__details{
+        width: 100% !important;
+    }
+    .targetPriceModal{
+        width: 90vw !important;
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .countryDiv{
+        width: 70% !important;
+    }
+    .divRow{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .divColumn1{
+        display: flex;
+        flex-direction: row;
+    }
+    .divColumn2{
+        display: flex;
+        flex-direction: row;
+    }
+    .shippingModal__header{
+        margin-top: 11rem;
+    }
+    /* .orderModal__label{
+        display: flex;
+        flex: 0.2;
+    } */
+    .targetPriceModal__form{
+        display: flex !important;
+        width: 70% !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: -25px;
+    }
+    #currency{
+        width: 50%;
+    }
+    .currencyConverter{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .paypalButton{
+        display: flex;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100px !important;
+        height: 40px !important;
+        margin-bottom: -7rem !important;
+    }
+}

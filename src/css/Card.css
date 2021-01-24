@@ -1,0 +1,230 @@
+.card{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 35px 15px 0 15px;
+    background: white;
+    transition: all 0.5s;
+}
+.card:hover{
+    box-shadow: 0px 25px 20px rgb(136, 136, 136);
+    transform: translateY(-3px);
+}
+.card > img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.card__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card__details > h4 {
+    margin: 10px 0px;
+    height: 3rem;
+    text-align: center;
+}
+.card__select{
+    display: flex;
+    width: 150px;
+    height: 45px;
+    background: #62962E;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 5px 10px;
+    outline: none !important;
+    outline-style: none !important;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.card__select:hover{
+    box-shadow: 0 0 2rem#70b629;
+    background: #70b629;
+    color: white;
+    outline: none;
+    outline-style: none;
+    border: none;
+}
+.card__Link{
+    text-decoration: none !important;
+}
+/* ############################# Progress Bar ############################################# */
+.container3{
+    position: relative !important;
+    /* margin-top: 75px !important;
+    margin-bottom: 20px !important; */
+    width: auto;
+}
+.container3 .skill{
+    position: relative !important;
+    display: flex !important;
+    /* margin: 20px 0 !important;
+    padding: 24px 10px 18px !important; */
+    overflow: hidden !important;
+    transition: 0.5s !important;
+}
+.container3 .skill .Value{
+    position: relative !important;
+    width: auto !important;
+    text-align: left !important;
+    color:black !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    margin-top: -2px !important;
+    text-transform: uppercase !important;
+}
+.container3 .skill .percent {
+    position: relative !important;
+    width: calc(100% - 150px) !important;
+    height: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: inset 0 0 10px #000 !important;
+}
+.container3 .skill .percent .progress{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 50% !important;
+    height: 100% !important;
+    border-radius: 10px !important;
+    background: rgb(43, 252, 1) !important;
+    box-shadow: 0 0 2px  rgb(43, 252, 1),0 0 5px  rgb(43, 252, 1), 0 0 10px  rgb(43, 252, 1) !important;
+    animation: animate 1s ease-in-out forwards !important;
+}
+@keyframes animate{
+    from{
+        width: 0% !important;
+    }
+}
+.container{
+    position: relative;
+    width: auto;
+}
+.container2{
+    width: 230px;
+}
+.container2 .skill{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container2 .skill .Name{
+    position: relative;
+    width: auto;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.container2 .skill .Value{
+    position: relative;
+    width: auto;
+    text-align: left;
+    color: #000;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.container2 .skill .percent {
+    position: relative;
+    width: calc(100% - 15px);
+    height: 13px;
+    margin: auto;
+    border-radius: 10px;
+    background: #b8b8b8;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+.container2 .skill .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    background: rgb(43, 252, 1);
+    box-shadow: 0 0 2px  rgb(43, 252, 1),0 0 5px  rgb(43, 252, 1), 0 0 10px  rgb(43, 252, 1);
+    animation: animate 1s ease-in-out forwards;
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    360%{
+        filter: hue-rotate(360deg);
+    }
+}
+.container3__price  {
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    width: calc(100% - 0px) !important;
+    height: auto;
+    margin: auto;
+    margin-left: 5px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgb(97, 97, 97);
+    padding-bottom: 10px;
+}
+.container3__units{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    padding-left: 0px !important;
+    color: rgb(78, 78, 78);
+    padding-top: 10px;
+}
+.container3__units > .container3__units__unit{
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 200;
+    padding: 10px;
+    padding-top: 0px !important;
+}
+@media only screen and (max-width: 768px){
+    .card{
+        width: 230px;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 35px 5px 0 5px;
+        background: white;
+        transition: all 0.5s;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .card{
+        width: 240px;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 35px 5px 0 5px;
+        background: white;
+        transition: all 0.5s;
+    }
+}
+

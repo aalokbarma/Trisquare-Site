@@ -1,0 +1,584 @@
+.sell{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-top:160px;
+}
+.sell__form{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow-x: hidden;
+    box-shadow: 0 0 0.8rem #555;
+    margin: auto;
+    border-radius: 1rem;
+}
+.sell__container{
+    display: flex;
+    width: 75vw;  
+    height: auto;
+    margin: auto;  
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+.sell__heading{
+    width: 100%;
+    background: #62962E;
+    display: flex;
+    height: auto;
+    text-align: center !important;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 0px;
+}
+.sell__headingMajor{
+    color: white;
+    margin-bottom: 1rem; 
+    font-size: 2.2rem;
+    text-align: center;
+}
+.sell__headerMinor{
+    color: white;
+    font-size: 1.2rem;
+}
+.sell__formHeading{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(73, 73, 73);
+    text-decoration: underline;
+    text-align: center;
+}
+.sell__dp{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    border-radius: 50%;
+}
+.sell__upload{
+    display: flex;
+    position: absolute;
+    color: rgb(2, 110, 2);
+    font-size: 2rem;
+    top: 70%;
+    left: 40%;
+    opacity: 1;
+    cursor: default;
+}
+.sell__uploadLink{
+    border: 1px solid lightgray;
+    padding: 0 6rem;
+    background: #3f611d;
+    color: white;
+    margin-bottom: 2rem;
+}
+input[type = number]::-webkit-inner-spin-button,
+input[type = number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 15px 0;
+    outline: none;
+    outline-style: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+.input::placeholder{
+    color: rgb(138, 137, 137);
+    font-weight: 400;
+}
+.smallInput{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    outline-style: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+.inputDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: left;
+    width: 100%;
+    margin-left: -18px;
+}
+.sell__address{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 15px 0;
+    outline: none;
+    outline-style: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+.sell__address::placeholder{
+    color: rgb(138, 137, 137);
+    font-weight: 400;
+}
+.sell__submitButton{
+    width: 100%;
+    background: #71ad36;
+    padding: 15px;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    outline: none;
+    outline-style: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.sell__submitButton:hover{
+    background:  #3a581b;
+    box-shadow: 0 0 2rem #555;
+    color: white;
+}
+
+.sell__emptyDiv{
+    width: 100%;
+    margin: 0;
+    height: 2px;
+    margin-bottom: 2rem;
+    background: gray;
+}
+.sell__resetPassword{
+    text-decoration: none;
+    font-size: larger;
+    transition: 0.2s;
+    color: #004a6d;
+    padding-left: 5px;
+}
+.sell__resetPassword:hover{
+    color:  cyan;
+}
+.sell__bottom{
+    color: gray;
+    font-weight: 400 !important;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.link{
+    font-weight: bold;
+}
+.file_button_container,
+.file_button_container input {
+     height: 35px;
+     width: 247px;
+     margin-left: 50px;
+ }
+ .file_button_container {
+     background: transparent url(http://i.stack.imgur.com/BT5AB.png) center no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .file_button_container input {
+     opacity: 0;
+     font-size: 0.8rem;
+     line-height: 2rem;
+     cursor: pointer;
+ }
+ .smallerInput{
+     width: 19% !important;
+     display: inline-flex;
+     margin-right: 3%;
+ }
+ .label{
+     display: flex;
+     width: 100%;
+     align-items: flex-start;
+     font-size: 1.5rem !important;
+     color: rgb(97, 97, 97);
+     text-decoration: underline;
+     margin-top: 2rem;
+ }
+ .sell__country{
+     display: flex;
+     align-items: flex-start !important;
+ }
+ .imageLabel{
+    width: auto;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: -10px;
+    outline: none;
+    outline-style: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: rgb(138, 137, 137);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+    text-transform: capitalize;
+ }
+ .sell__productImage{
+     display: flex;
+     padding-top: 2rem;
+     flex-direction: row;
+     align-items: center;
+ }
+ .sell__shippingPrice{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+ .inputSpecial{
+     width: 220px !important;
+     margin: 0 25px ;
+     border: 2px solid gray;
+     background: #fff;
+     text-transform: none !important;
+ }
+ .sell__selectCategories{
+     color: gray;
+     font-weight: 400;
+ }
+ .sell__deadline{
+     color: gray;
+ }
+ .sell__wholesale{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+ .sell__divs{
+    display: flex;
+    flex-direction: row;
+}
+.inputs1{
+    display: flex;
+    width: auto;
+
+    padding: 0 10px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-size: 0.5rem;
+    outline: none;
+    outline-style: none;
+    border: none;
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+ .sell__divs1{
+     display: inline-flex;
+     flex-direction: row;
+     width: auto;
+     /* align-items: flex-start; */
+     justify-content: space-between !important;
+ }
+ .sell__unitDiv{
+     display: inline;
+     width: auto !important;
+
+ }
+ .sell__wholesaleUnit{
+     display: inline-flex !important;
+     width: auto !important;
+     align-items: flex-start !important;
+     justify-content: flex-start !important;
+ }
+ .inputs0{
+    display: flex;
+    width: auto;
+    flex: 1;
+    padding: 0 10px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-size: 0.5rem;
+    outline: none;
+    outline-style: none;
+    border: none;
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+    margin-bottom: -2rem;
+
+ }
+ .sell__Address{
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .sell__postalCode{
+     max-width: 300px;
+ }
+ .countries{
+     max-width: 300px;
+ }
+ .sell__shippingPrice{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ .sell__continents__price{
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+ }
+ .disabledPriceTag{
+     background-color: lightgray !important;
+     display: flex !important;
+     width: 100% !important;
+     flex: 0.2 !important;
+     text-align: start !important;
+     justify-content: center !important;
+ }
+ .pricetag{
+     display: flex !important;
+     text-align: start !important;
+     width: 100% !important;
+     flex: 0.4 !important;
+ }
+ .priceLabel{
+     display: flex !important;
+     width: 100% !important;
+     flex: 0.4 !important;
+     text-decoration: none !important;
+     border-bottom: 2px solid gray !important;
+     /* text-align: center !important; */
+     text-align: start !important;
+     font-size: 1.5rem !important;
+     color: rgb(97, 97, 97);
+     text-decoration: underline;
+     margin-top: 2rem;
+     align-items: center;
+     justify-content: center;
+ }
+ @media only screen and (max-width : 600px){
+    .sell__form{
+        padding: 5% 7%;
+        border-radius: 0.5rem;
+    }
+    .sell__container{
+        width: 90vw;  
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+    }
+    .sell__heading{
+        padding: 5px 0px;
+        text-align: center;
+    }
+    .sell__headingMajor{
+        margin-bottom: 0.7rem; 
+        font-size: 1.8rem;
+    }
+    .sell__headerMinor{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .sell__formHeading{
+        font-size: 1.2rem;
+    }
+    .input {
+        font-size: 0.95rem !important;
+        margin: 10px 15px !important;
+        border-bottom: 1px solid gray !important;
+        text-transform: none !important;
+    }
+    .sell__address{
+        font-size: 0.95rem;
+    }
+    .sell__submitButton{
+        padding: 10px;
+        font-size: 1rem;
+        color: white;
+        font-weight: 500;
+    }
+    .file_button_container,
+    .file_button_container input {
+         height: 30px;
+         width: 180px;
+         margin-left: 0px;
+     }
+     .file_button_container {
+        background: transparent url(http://i.stack.imgur.com/BT5AB.png) center no-repeat;
+        display: flex;
+        width: 47%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-right: -15px;
+        margin-top: -5px;
+    }
+     .file_button_container input {
+         opacity: 0;
+         font-size: 0.8rem;
+         line-height: 2rem;
+         cursor: pointer;
+     }
+     .smallerInput{
+         width: 18% !important;
+         font-size: 0.9rem !important;
+         margin-right: 0% !important;
+         padding-left: 4px;
+         padding-right: 4px;
+     }
+     .label{
+         display: flex;
+         width: 100%;
+         align-items: flex-start;
+         font-size: 1.1rem !important;
+         color: rgb(97, 97, 97);
+         text-decoration: underline;
+         margin-top: 2rem;
+     }
+     .imageLabel{
+        width: auto !important;
+        flex: 1;
+        padding: 10px 0;
+        font-size: 0.95rem !important; 
+        border-bottom: 1px solid gray !important;
+        font-weight: 400;
+        margin-right: 15px !important;
+        font-size: 0.95rem !important;
+        margin-left: -10px;
+        padding-left: 5px;
+     }
+     .sell__productImage{
+         display: flex;
+         padding-top: 1rem;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .sell__shippingPrice{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+     }
+     .inputSpecial{
+         width: 115px !important;
+         margin: 0 10px !important;
+         margin-right: 0px !important;
+         height: 1rem !important;
+         padding: 3px 5px;
+         border: 2px solid gray;
+         padding-bottom: 3px !important;
+         padding-top: 3px !important;
+         background: #fff;
+         text-transform: none !important;
+     }
+     .inputSpecial::placeholder{
+         font-size: 0.65rem;
+     }
+     .sell__product{
+         margin-left: 0px;
+     }
+     .sell__productInput{
+        margin-left: -25px !important;
+        padding-right: 30px;
+     }
+     .sell__productInput > .signup__address{
+         margin-left: 15px;
+     }
+     .sell__wholesaleUnitDiv,
+     .sell__wholesalePriceDiv{
+         margin-left: -15px;
+     }
+    .inputs1{
+        padding: 0 0px;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-size: 1rem;
+        outline: none;
+        outline-style: none;
+        border: none;
+        color: rgb(59, 59, 59);
+        font-weight: 500;
+        letter-spacing: 1px;
+        /* font-size:; */
+    }
+     .sell__divs1{
+         display: inline-flex;
+         flex-direction: row;
+         width: auto;
+         /* align-items: flex-start; */
+         justify-content: space-between !important;
+     }
+     .sell__unitDiv{
+         display: inline;
+         width: auto !important;
+    
+     }
+     .sell__wholesaleUnit{
+         display: inline-flex !important;
+         width: auto !important;
+         align-items: flex-start !important;
+         justify-content: flex-start !important;
+     }
+     .inputs0{
+        display: flex;
+        width: auto;
+        flex: 1;
+        padding: 0 10px;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-size: 0.5rem;
+        outline: none;
+        outline-style: none;
+        border: none;
+        color: rgb(59, 59, 59);
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: larger;
+        margin-bottom: -2rem;
+    
+     }
+     .sell__shippingPrice{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+     .sell__continents__price{
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+     }
+ }

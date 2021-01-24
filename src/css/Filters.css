@@ -1,0 +1,33 @@
+.filters__heading{
+    text-transform: uppercase;
+    width: 100% !important;
+    text-align: center;
+    color: white;
+    background: #777;
+    margin-bottom: 15px;
+}
+.filters__label{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-weight: 500;
+    color: #555;
+}
+.filters__options{
+    display: flex;
+    flex-direction: column;
+}
+.filters__optionGroup{
+    display: flex;
+    flex-direction: row !important;
+}
+.filter__para{
+    display: inline-flex;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.filter__para,
+.filters__checkBox{
+    padding-bottom: 10px;
+}

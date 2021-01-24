@@ -1,0 +1,98 @@
+.productPage{
+    margin-top: 160px;
+}
+
+.productPage__searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #62962E;
+    padding-right: 75px !important;
+    color: white;
+}
+.productPage__category{
+    flex: 0.8;
+    color: white;
+    margin-top: -10px;
+}
+.productPage__mainSection{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+}
+.product__leftDiv{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    height: auto;
+}
+.product__rightDiv{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    height: 500px;
+    margin: 20px;
+}
+.productpage__image{
+    height: 450px;
+    width: 500px;
+    object-fit: contain;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    padding: 35px;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+}
+@media only screen and (max-width: 600px){
+    .productPage__searchBar{
+        padding: 10px;
+        padding-right: 15px !important;
+    }
+    .productPage__category{
+        flex: 1;
+        text-align: center;
+        font-size: 1rem ;
+    }
+    .productPage__mainSection{
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+    .product__leftDiv{
+        width: 91%;
+    }
+    .product__rightDiv{
+        flex: 1;
+        height: auto;
+        margin: 10px;
+    }
+    .productpage__image{
+        height: 80vh;
+        width: 85vw;
+        object-fit: contain;
+        margin: auto;
+        border-radius: 0.5rem;
+        border: 0px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .productPage__mainSection{
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+    .productpage__image{
+        height: 80vh;
+        width: 85vw;
+        object-fit: contain;
+        margin: auto;
+        border-radius: 0.5rem;
+        border: 0px;
+    }
+}

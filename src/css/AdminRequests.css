@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px){
+.request__para{
+    font-size: 0.6rem !important;
+    display: flex !important;
+    flex: 1 !important;
+    text-align: left;
+    }
+    .requestPage__button{
+        font-size: 0.6rem !important;
+    }
+}

@@ -1,0 +1,115 @@
+.forgotPage{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100vw;
+    height: 80vh;
+    background-color: rgb(245, 245, 245);
+    margin-top: 160px;
+}
+.forgotPage__modal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 420px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 4px 20px 15px rgb(255, 214, 214);
+    padding: 1.5rem;
+}
+h4{
+    font-size: 1.5rem;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+}
+hr{
+    
+    /* border: 1px solid black; */
+    width: 100%;
+    color: gray !important;
+    background: gray !important;
+}
+.forgotPage__emailBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0px 20px ; */
+    margin-top: 2rem;
+}
+.forgotPage__email{
+    height: 35px;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    background-color: rgb(248, 240, 240);
+    padding: 5px ;
+    color:Gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+.forgotPage__icon{
+    font-size: 30px;
+    color: rgb(92, 92, 92) !important;
+}
+.forgotPage__resetPassword{
+    width: 50%!important;
+    height: auto!important;
+    border-radius: 10px!important;
+    outline: none!important;
+    font-size: 1.2rem!important;
+    font-weight: bold!important;
+    background-color: rgb(68, 68, 68)!important;
+    color: white!important;
+    border: 1px solid transparent;
+    text-decoration: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    transition: all 0.3s !important;
+    padding: 10px 15px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.forgotPage__resetPassword:hover {
+    background-color: white!important;
+    border: 1px solid gray;
+    color: rgb(41, 40, 40)!important;
+    cursor:pointer!important;
+}
+
+@media only screen and (max-width: 600px){
+    .forgotPage__modal{
+        height: auto;
+        width: 70vw;
+        border-radius: 15px;
+        padding: 1rem;
+    }
+    h4{
+        font-size: 1.1rem;
+        padding: 6px;
+    }
+    .forgotPage__emailBox{
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+    }
+    .forgotPage__email{
+        height: auto;
+        width: 100%;
+        flex: 1;
+        font-weight: medium;
+        font-size: 0.8rem;
+    }
+    .forgotPage__icon{
+        font-size: 1.5rem;
+    }
+    .forgotPage__resetPassword{
+        border-radius: 5px!important;
+        font-size: 0.95rem!important;
+        padding: 5px 10px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+}

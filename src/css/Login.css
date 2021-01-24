@@ -1,0 +1,287 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 160px;
+}
+.login__container{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem 3rem ;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 7%);
+    box-shadow: 0 0 1rem #777;
+}
+.login__heading{
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(85, 85, 85);
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+}
+.login__label{
+    text-align: start;
+    position: absolute;
+}
+.login__input{
+    width: 93.4%;
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+    outline: none;
+    outline-style: none;
+    color: rgb(68, 68, 68);
+}
+.login__SubmitButton{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: auto;
+    outline: none;
+    outline-style: none;
+    background: #76b438;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    transition: all 0.2s;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+.login__SubmitButton:hover{
+    color: white;
+    background: #5a8b29;
+    box-shadow: 0 0 2rem #777,inset 0 0 2rem #555;
+    cursor: pointer;
+}
+.login__para{
+    padding: 2rem;
+    font-size: large;
+    font-weight: 450;
+    color: rgb(77, 77, 77);
+}
+.login__resetPassword{
+    text-decoration: none;
+    font-size: larger;
+    transition: 0.2s;
+    color: #476e20;
+    padding-left: 5px;
+}
+.login__resetPassword:hover{
+    color:  #69a32f;
+}
+.login__bottom{
+    color: gray;
+    font-weight: 400 !important;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.link{
+    font-weight: bold;
+}
+.login__emptyDiv{
+    width: 100%;
+    margin: 0;
+    height: 2px;
+    margin-bottom: 2rem;
+    background: gray;
+}
+.main_div{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.box{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 10px;
+}
+.box h1{
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+.box .inputBox{
+    position: relative;
+}
+.box .inputBox input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    outline-style: none;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #62962E;
+    font-size: 12px;
+}
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box input[type = "submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    outline-style: none;
+    color: #fff;
+    background: #62962E;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+@media only screen and (max-width:600px){
+    .login__container{
+        width: 70vw;
+        border-radius: 0.5rem;
+        padding: 1.8rem 2.6rem ;
+    }
+    .login__heading{
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    .login__input{
+        padding: 0.7rem;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .login__SubmitButton{
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        color: white;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .login__para{
+        padding: 1.3rem;
+        font-size: 0.8rem;
+        font-weight: 450;
+        color: gray;
+    }    
+    .login__resetPassword{
+        font-weight: 500;
+        font-size: 0.8rem;
+    }  
+    .resetButtonContainer{
+        display: flex;
+        padding: 0 !important;
+    } 
+    .link{
+        font-weight: 500 !important;
+    }
+    
+    .login__emptyDiv{
+        width: 100%;
+        margin: 0;
+        height: 1px;
+        margin-bottom: 1rem;
+        background: gray;
+    }
+    .main_div{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .box{
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 10px;
+    }
+    .box h1{
+        margin-bottom: 30px;
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .box .inputBox{
+        position: relative;
+    }
+    .box .inputBox input{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        outline-style: none;
+    }
+    .box .inputBox input:focus ~ label,
+    .box .inputBox input:valid ~ label{
+        top: -20px;
+        left: 0;
+        color: #62962E;
+        font-size: 12px;
+    }
+    .box .inputBox label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 1px;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .box input[type = "submit"]{
+        background: transparent;
+        border: none;
+        outline: none;
+        outline-style: none;
+        color: #fff;
+        background: #62962E;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}

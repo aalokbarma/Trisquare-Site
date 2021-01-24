@@ -1,0 +1,32 @@
+.inputs {
+    width: 95%;
+    padding: 10px;
+    margin-left: 35px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    font-size: 1.38rem !important;
+    margin-top: 8px !important;
+    outline: none;
+    outline-style: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: rgb(95, 95, 95) !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.inputs::placeholder{
+    color: rgb(138, 137, 137);
+    font-weight: 400;
+}
+@media only screen and (max-width: 600px){
+    .inputs {
+        width: 100%;
+        margin-left: 10px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-size: 1rem !important;
+        border-bottom: 1px solid gray;
+        color: gray !important;
+    }
+}

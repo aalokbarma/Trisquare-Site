@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    background: transparent;
+}
+.navbar__components{
+    display: flex;
+    margin-right: 25px;
+}
+.navbar__component{
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:  black;
+    transition: 0.5s;
+    width: 140px;
+    text-align: center;   
+}
+.navbar__component:hover{
+    text-decoration: none;
+    color: rgb(9, 184, 3);
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 2px gray;
+    border-radius: 5px;
+}
+.sell__link{
+    background: rgb(0, 204, 85);
+    border-radius: 5px;
+    color: white;
+    margin-left: 15px;
+}
+.admin__link {
+    background: rgb(26, 100, 55);
+    border-radius: 5px;
+    color: white;
+    margin-left: 15px;
+}
+.login__link{
+    background: #68943c;
+    border-radius: 5px;
+    color: white;
+    margin-left: 15px;
+}
+.sell__link:hover,
+.admin__link:hover, 
+.login__link:hover{
+    color: black;
+}
+@media only screen and (max-width: 600px){
+    .navbar__component{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        letter-spacing: 1px;
+        color:  white;
+        transition: 0.5s;
+        font-size: 0.9rem;
+        font-weight: 400 ;
+        width: 18vw;
+        text-align: center;   
+    }
+}
